@@ -59,7 +59,7 @@ export default class ApiStore implements IApiStore {
                 status: response.status,
                 data: await response.json()
             }
-        } catch (error) {
+        } catch (error: any) {
             return {
                 success: false,
                 data: error,
