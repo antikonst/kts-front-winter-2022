@@ -6,11 +6,17 @@
  * Выберите любой запрос из публичного API GitHub.
  */
 
- import { ApiResponse } from "../../shared/store/ApiStore/types";
+ import { ApiResponse } from "src/shared/store/ApiStore/types";
 
  // Параметры запроса
  export type GetOrganizationReposListParams = {
    organizationName: string;
+ };
+ 
+ // Параметры запроса
+ export type GetRepoBranchesLisParams = {
+   ownerName: string;
+   repoName: string;
  };
  
  export type GitHubRepoOwner = {
@@ -27,9 +33,22 @@
    private: boolean;
    stargazers_count: number;
    owner: GitHubRepoOwner;
+   updated_at: Date;
  };
-
-export interface IGitHubStore {
-    getOrganizationReposList(params: GetOrganizationReposListParams): Promise<ApiResponse<RepoItem[], any>>;
-}
-
+ 
+ export type BranchItem = {
+   name: string;
+   protected: boolean;
+   protection_url: string;
+ };
+ 
+ export interface IGitHubStore {
+   getOrganizationReposList(
+     params: GetOrganizationReposListParams
+   ): Promise<ApiResponse<RepoItem[], any>>;
+ 
+   getRepoBranchesList(
+     params: GetRepoBranchesLisParams
+   ): Promise<ApiResponse<BranchItem[], any>>;
+ }
+ 
