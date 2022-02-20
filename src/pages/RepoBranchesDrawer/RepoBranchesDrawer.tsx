@@ -44,7 +44,7 @@ const RepoBranchesDrawer: React.FC<RepoBranchesDrawerProps> = ({
       onClose={onClose}
       visible={visible}
     >
-      {branchesList.length &&
+      {Boolean(branchesList.length) &&
         branchesList.map((branch, i) => (
           <React.Fragment key={i}>
             <p>
