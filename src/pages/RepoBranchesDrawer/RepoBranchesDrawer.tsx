@@ -21,9 +21,10 @@ const RepoBranchesDrawer: React.FC<RepoBranchesDrawerProps> = ({
   const [branchesList, setBranchesList] = useState<BranchItem[]>([]);
 
   useEffect(() => {
-    const getBranches = async () => {
-      const EXAMPLE_ORGANIZATION = selectedRepo.owner.login;
-      const EXAMPLE_REPO = selectedRepo.name;
+    const getBranches = async (
+      EXAMPLE_ORGANIZATION = selectedRepo.owner.login,
+      EXAMPLE_REPO = selectedRepo.name
+    ) => {
       try {
         await new GitHubStore()
           .getRepoBranchesList({
