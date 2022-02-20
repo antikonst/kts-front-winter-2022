@@ -9,7 +9,7 @@ declare type EventType =
 
 export type RepoBranchesDrawerProps = {
   selectedRepo: RepoItem;
-  onClose: (e: EventType) => void;
+  onClose: () => void;
   visible: boolean;
 };
 

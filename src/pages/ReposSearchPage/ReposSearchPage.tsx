@@ -4,9 +4,9 @@ import { useEffect } from "react";
 
 import Button from "@components/Button";
 import Input from "@components/Input";
-import RepoBranchesDrawer from "@components/RepoBranchesDrawer";
 import RepoTile from "@components/RepoTile";
 import SearchIcon from "@components/SearchIcon";
+import RepoBranchesDrawer from "@pages/RepoBranchesDrawer";
 import "./ReposSearchPage.css";
 import GitHubStore from "@store/GitHubStore/GitHubStore";
 import { RepoItem } from "@store/GitHubStore/types";
