@@ -57,6 +57,7 @@ function ReposSearchPage() {
     setVisible(false);
   };
 
+  let btnClass = "btn-search";
   return (
     <Spin spinning={isLoading} tip="Loading...">
       <div className="grid-search row">
@@ -65,7 +66,7 @@ function ReposSearchPage() {
           onChange={handleChange}
           value={value}
         />
-        <Button onClick={handleSearch} disabled={disabled}>
+        <Button className={btnClass} onClick={handleSearch} disabled={disabled}>
           <SearchIcon />
         </Button>
       </div>

@@ -1,9 +1,4 @@
 button{
-  width: 50px;
-    height: 50px;
-    background: var(--avatar-bg-color);
-    border: 0px;
-    border-radius: 6px;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
@@ -16,4 +11,13 @@ button:hover:enabled{
 
 button:disabled{
   background: var(--border-color);
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    background: var(--avatar-bg-color);
+    border: 0px;
+    border-radius: 6px;
+    margin-left: 12px;
 }
