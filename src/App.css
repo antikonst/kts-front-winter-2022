@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 :root {
   --main-bg-color: #FFFFFF;
   --avatar-bg-color: #FF5555;
