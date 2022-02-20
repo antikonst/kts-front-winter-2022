@@ -31,7 +31,7 @@
 }
 
 .grid-search__input:disabled{
-  background: var(--out-color);
+  background: var(--input-disabled-bg-color);
   border: 1px solid var(--disabled-color);
   color: var(--second-txt-color);
 }

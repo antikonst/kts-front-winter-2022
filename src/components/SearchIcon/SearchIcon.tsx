@@ -1,3 +1,4 @@
+import React from "react";
 import "./SearchIcon.css";
 
 export type SearchIconProps = {
@@ -19,4 +20,4 @@ const SearchIcon: React.FC<SearchIconProps> = ({ currentColor = "#fff" }) => (
   </svg>
 );
 
-export default SearchIcon;
+export default React.memo(SearchIcon);

@@ -1,3 +1,4 @@
+import React from "react";
 import { PropsWithChildren } from "react";
 import "./Button.css";
 
@@ -18,4 +19,4 @@ const Button: React.FC<ButtonProps> = ({
   </button>
 );
 
-export default Button;
+export default React.memo(Button);

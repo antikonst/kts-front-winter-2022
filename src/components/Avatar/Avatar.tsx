@@ -1,3 +1,4 @@
+import React from "react";
 import "./Avatar.css";
 
 export type AvatarProps = {
@@ -9,4 +10,4 @@ const Avatar: React.FC<AvatarProps> = ({ src = "", alt = "" }) => {
   return <img src={src} alt={alt} />;
 };
 
-export default Avatar;
+export default React.memo(Avatar);
