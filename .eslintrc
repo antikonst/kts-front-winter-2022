@@ -5,6 +5,7 @@
   ],
   "plugins": ["prettier"],
   "rules": {
+    "linebreak-style": 0,
     "no-console": "error",
     "prettier/prettier": "error",
     "import/order": [

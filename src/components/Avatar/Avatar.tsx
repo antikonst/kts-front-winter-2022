@@ -5,10 +5,7 @@ export type AvatarProps = {
   alt?: string;
 };
 
-const Avatar: React.FC<AvatarProps> = ({
-  src = "src/layouts/ava.png",
-  alt = "",
-}) => {
+const Avatar: React.FC<AvatarProps> = ({ src = "", alt = "" }) => {
   return <img src={src} alt={alt} />;
 };
 

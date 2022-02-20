@@ -36,7 +36,7 @@
 .git-repo-tile__background{
   width: 80px;
   height: 80px;
-  background: var(--avatar-bg-color);
+  /* background: var(--avatar-bg-color); */
   border-radius: 40px;
   display: flex;
   align-items: center;
