@@ -22,8 +22,10 @@ const RepoTile: React.FC<RepoTileProps> = ({ onClick, repo }) => (
         <div className="git-repo-tile__content-repo-name">
           <b> {repo.name} </b>
         </div>
-        <div className="git-repo-tile__content-org-name">
-          <a href={repo.owner.url}> {repo.owner.login}</a>
+        <div>
+          <a className="git-repo-tile__content-org-name" href={repo.owner.url}>
+            {repo.owner.login}
+          </a>
         </div>
         <div className="git-repo-tile__content-params-name">
           <StartIcon></StartIcon>
