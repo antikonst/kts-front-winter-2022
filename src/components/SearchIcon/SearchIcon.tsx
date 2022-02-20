@@ -3,11 +3,15 @@ import "./SearchIcon.css";
 
 export type SearchIconProps = {
   currentColor?: string;
+  classn?: string;
 };
 
-const SearchIcon: React.FC<SearchIconProps> = ({ currentColor = "#fff" }) => (
+const SearchIcon: React.FC<SearchIconProps> = ({
+  currentColor = "#fff",
+  classn = "grid-search__img",
+}) => (
   <svg
-    className="grid-search__img"
+    className={classn}
     xmlns="http://www.w3.org/2000/svg"
     width="18"
     height="18"
