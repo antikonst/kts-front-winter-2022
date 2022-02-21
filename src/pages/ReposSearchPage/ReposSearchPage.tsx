@@ -21,7 +21,7 @@ function ReposSearchPage() {
 
   useEffect(() => {
     const getRepos = async () => {
-      const EXAMPLE_ORGANIZATION = "kubernetes";
+      const EXAMPLE_ORGANIZATION = "ktsstudio";
       try {
         await new GitHubStore()
           .getOrganizationReposList({
