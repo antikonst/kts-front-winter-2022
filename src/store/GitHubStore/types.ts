@@ -37,7 +37,7 @@
  };
  
  export type BranchItem = {
-   id: number;
+   id: string;
    name: string;
    protected: boolean;
    protection_url: string;
