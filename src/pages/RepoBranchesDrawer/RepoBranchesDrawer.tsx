@@ -46,7 +46,7 @@ const RepoBranchesDrawer: React.FC<RepoBranchesDrawerProps> = ({
     >
       {Boolean(branchesList.length) &&
         branchesList.map((branch, i) => (
-          <p key={i}>
+          <p key={branch.id}>
             {i + 1}. {branch.name}
           </p>
         ))}
