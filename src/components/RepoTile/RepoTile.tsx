@@ -4,8 +4,8 @@ import Avatar from "@components/Avatar";
 import StartIcon from "@components/StarIcon";
 import { RepoItem } from "@store/GitHubStore/types";
 import { Tooltip } from "antd";
-import Moment from "moment";
 import "./RepoTile.css";
+import { format, compareAsc } from "date-fns";
 
 export type RepoTileProps = {
   onClick?: (e: React.MouseEvent) => void;
@@ -33,7 +33,7 @@ const RepoTile: React.FC<RepoTileProps> = ({ onClick, repo }) => (
             {repo.stargazers_count}
           </small>
           <small className="git-repo-tile__update">
-            Updated {Moment(repo.updated_at).format("D MMM")}
+            Updated {format(new Date(repo.updated_at), "dd MMM")}
           </small>
         </div>
       </div>
