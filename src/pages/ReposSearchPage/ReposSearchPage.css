@@ -1,7 +1,7 @@
 .grid-search{
   width: 357px;
   display: grid;
-  grid-template-columns: 1fr 50px;
+  grid-template-columns: 1fr 62px;
 }
 
 .row{
