@@ -1,0 +1,12 @@
+.grid-search{
+  width: 357px;
+  display: grid;
+  grid-template-columns: 1fr 62px;
+}
+
+.row{
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 16px;
+}
